@@ -11,7 +11,7 @@ The dataset for this model is obtained from [Kaggle](https://www.kaggle.com/data
 # Data Pre processing
 The datset is cleaned by dropping all the null values if they were present. Requisite libraries such as *Pandas, Numpy* and *Scikit-Learn* were imported. Only two columns, **Ejection Fraction** and **Serum Creatinine** were used and the rest were dropped. The reason why Ejection Fraction and Serum Creatinine were selected is because these two features alone can lead to more accurate predictions than using the original dataset features in its entirety, according to a research published in the [BMC Journal.](https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-1023-5)
 
-#Model Training
+# Model Training
 The machine learning model utilises the Logistic Regression algorithm to predict whether heart failure patient will survive or not. 70% of the data is used to train the model and the remaining 30% is categorised as testing data. This split is done bt the train_test_split function imported from scikitlearn. A logistic regression model is then instantiated and fit to the training data using the 'fit' method. The coefficients and intercept of the logistic regression model are printed and the model is then used to predict the outcome of new data using the 'predict' method.
 
 # Conclusion
